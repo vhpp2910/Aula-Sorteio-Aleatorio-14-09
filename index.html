@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo do Sorteio Alviverde</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <header>
+      <h1>Sorteio Alviverde</h1>
+      <p class="subtitle">Adivinhe o número premiado!</p>
+    </header>
+
+    <div class="score-board">
+      <span>Pontuação:</span>
+      <strong id="score">0</strong>
+    </div>
+
+    <main class="game-area">
+      <label for="guessInput">Qual o número? (1 a 10)</label>
+      <input type="number" id="guessInput" min="1" max="10" placeholder="Digite aqui...">
+      
+      <button id="btnChutar" onclick="jogar()">Chutar</button>
+      <button id="btnNovoJogo" onclick="novoJogo()" class="btn-secondary" style="display: none;">Jogar Novamente</button>
+    </main>
+
+    <div id="resultMessage" class="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
